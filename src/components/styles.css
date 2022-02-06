@@ -33,3 +33,47 @@
   background-color: rgba(131, 115, 247, 0.74);
   cursor: pointer;
 }
+
+.tasks {
+  display: flex;
+  justify-content: space-evenly;
+  width: 90%;
+  flex-wrap: wrap;
+}
+
+.single-task {
+  background-color: white;
+  display: flex;
+  padding: 10px;
+  margin-top: 15px;
+  transition: 0.4s;
+  width: 60%;
+}
+
+.single-task:hover {
+  transform: scale(1.03);
+  background-color: rgba(131, 115, 247, 0.74);
+  color: white;
+  border: 1px solid white;
+}
+
+.single-task-text {
+  flex: 1;
+  padding: 3px;
+  font-size: 20px;
+}
+
+.icon {
+  position: relative;
+  top: 5px;
+  margin-left: 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+@media (max-width: 700px) {
+  .single-task {
+    width: 95%;
+    margin-bottom: 10px;
+  }
+}

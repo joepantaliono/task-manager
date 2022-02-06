@@ -2,8 +2,8 @@ import './styles.css';
 
 interface Props {
   task: string;
-  setTask: React.Dispatch<React.SetStateAction<string>>; // callable function type found hovering over setTask in hook declaration
-  handleAdd: (e: React.FormEvent) => void; // doesn't return anything return type == void
+  setTask: React.Dispatch<React.SetStateAction<string>>; 
+  handleAdd: (e: React.FormEvent) => void;
 }
 
 const InputField = ({ task, setTask, handleAdd }: Props) => {
